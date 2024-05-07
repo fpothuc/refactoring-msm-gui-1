@@ -20,10 +20,6 @@ class Movie < ApplicationRecord
         
     the_director = matching_directors.at(0)
 
-    if the_director != nil
-      return the_director.name
-    else
-      return "Uh oh! We weren't able to find a director for this movie."
-    end
+    return the_director
   end
 end
