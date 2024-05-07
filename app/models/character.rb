@@ -11,7 +11,7 @@
 #
 class Character < ApplicationRecord
   def movie
-    m_id = a_character.movie_id
+    m_id = self.movie_id
 
     matching_movies = Movie.where({ :id => m_id })
 
